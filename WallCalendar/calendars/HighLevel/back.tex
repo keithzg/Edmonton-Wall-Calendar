@@ -50,36 +50,13 @@
 \newcommand{\thumb}[1]{\frame{\includegraphics[keepaspectratio,width=\ThumbAspectRation\purePaperWidth]{\PhotoPath\GetMonthImage{#1}}}}
 \vspace*{.25cm}
 
-%% QR code
-\newcommand{\QR}{%
-\begin{pspicture}(1in,1in)
-\psbarcode{\webprefix}{eclevel=H}{qrcode}
-\end{pspicture}
-}
-
-%% ISBN and QR bar codes
-\def\imagetop#1{\vtop{\null\hbox{#1}}}
-\newsavebox{\isbn}
-\savebox{\isbn}{%
-\begingroup
-\setlength{\tabcolsep}{0pt}
-\tiny%
-\begin{tabular}{ll}
-\imagetop{\frame{\colorbox{white}{\includegraphics{isbn_barcode}}}}&\hspace*{.2cm}\imagetop{\QR}\\
-\raisebox{-.2cm}{\textsc{CALENDAR 2015. \caltitleEN.}}&\\
-\raisebox{-.2cm}{\textsc{КАЛЕНДАРЬ 2015. \caltitleRU.}}&\\
-\multicolumn{2}{l}{\raisebox{-.2cm}{\ccLogo\ Creative Commons Attribution-ShareAlike 3.0 Unported License.}}\\
-\raisebox{-.2cm}{\ccbysa\ \theauthor, 2014.}&\\
-\end{tabular}
-\endgroup
-}
 
 \centerline{%
 \begin{tabular}{l@{\hspace{2mm}}l@{\hspace{2mm}}l@{\hspace{2mm}}l}
 \thumb{1}&\thumb{2}&\thumb{3}&\multirow{3}{*}[3.5cm]{\exampleCal}\\
 \thumb{4}&\thumb{5}&\thumb{6}&\\
 \thumb{8}&\thumb{9}&\thumb{10}&\\
-\thumb{11}&\thumb{12}&\multicolumn{2}{l}{\hspace*{-.4cm}\raisebox{1.72cm}{\usebox{\isbn}}}\\
+\thumb{11}&\thumb{12}&\multicolumn{2}{l}{\hspace*{-.4cm}\raisebox{1.72cm}}\\
 \end{tabular}}
 
 \end{document}

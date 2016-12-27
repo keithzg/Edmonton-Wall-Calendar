@@ -17,14 +17,13 @@
 
 % First page: Title
 \newgeometry{top=.5in,left=1in,right=1in,bottom=.5in}
-\centerline{\small\bf\caltitleEN}
-\centerline{\small\bf\caltitleRU}
+\centerline{\small\normalfont \bfseries\caltitleEN}
 
 \newcommand{\thumb}[1]{\frame{\includegraphics[keepaspectratio,width=.11\paperwidth]{\PhotoPath\GetMonthImage{#1}}}}
 %% Argument 1: English description
 %% Argument 2: Russian description
 \newcommand{\desc}[2]{%
-\raisebox{1.85cm}{\it\begin{tabular}{p{7cm}}
+\raisebox{1.85cm}{\itshape\begin{tabular}{p{7cm}}
 #1.\\
 #2.
 \end{tabular}}
@@ -112,13 +111,13 @@
 
 % Next year calendar - last page
 \vspace*{1cm}
-\centerline{\bf\Large 2016}
+\centerline{\bfseries\Large 2016}
 \vspace*{1.5cm}
 \centerline{\usebox{\yearCalFirst}}
 
 \newpage
 \vspace*{1cm}
-\centerline{\bf\Large 2016}
+\centerline{\bfseries\Large 2016}
 \vspace*{1.5cm}
 \centerline{\usebox{\yearCalSecond}}
 
