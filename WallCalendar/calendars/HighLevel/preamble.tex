@@ -124,21 +124,20 @@ pdflang={en}
 
   %% Small calendars for the months: Dec, 2016 - Dec 2018
   \savebox{\smallCalDecO}{\genSmallCal{12}{2016}{December}}
-  \savebox{\smallCalFeb}{\genSmallCal{02}{2017}{ФЕВРАЛЬ}}
-  \savebox{\smallCalJan}{\genSmallCal{01}{2017}{ЯНВАРЬ}}
-  \savebox{\smallCalMar}{\genSmallCal{03}{2017}{МАРТ}}
-  \savebox{\smallCalApr}{\genSmallCal{04}{2017}{АПРЕЛЬ}}
-  \savebox{\smallCalMay}{\genSmallCal{05}{2017}{МАЙ}}
-  \savebox{\smallCalJun}{\genSmallCal{06}{2017}{ИЮНЬ}}
-  \savebox{\smallCalJul}{\genSmallCal{07}{2017}{ИЮЛЬ}}
-  \savebox{\smallCalAug}{\genSmallCal{08}{2017}{АВГУСТ}}
-  \savebox{\smallCalSep}{\genSmallCal{09}{2017}{СЕНТЯБРЬ}}
-  \savebox{\smallCalOct}{\genSmallCal{10}{2017}{ОКТЯБРЬ}}
-  \savebox{\smallCalNov}{\genSmallCal{11}{2017}{НОЯБРЬ}}
-  \savebox{\smallCalDec}{\genSmallCal{12}{2017}{ДЕКАБРЬ}}
-  %% 2018: We don't know the holidays yet. Marking only weekends and 1st of January with red
-  \renewcommand{\markRed}{if (weekend, equals=01-01) [red]}
-  \savebox{\smallCalJanN}{\genSmallCal{01}{2016}{ЯНВАРЬ}}
+  \savebox{\smallCalJan}{\genSmallCal{01}{2017}{January}}
+  \savebox{\smallCalFeb}{\genSmallCal{02}{2017}{February}}
+  \savebox{\smallCalMar}{\genSmallCal{03}{2017}{March}}
+  \savebox{\smallCalApr}{\genSmallCal{04}{2017}{April}}
+  \savebox{\smallCalMay}{\genSmallCal{05}{2017}{May}}
+  \savebox{\smallCalJun}{\genSmallCal{06}{2017}{June}}
+  \savebox{\smallCalJul}{\genSmallCal{07}{2017}{July}}
+  \savebox{\smallCalAug}{\genSmallCal{08}{2017}{August}}
+  \savebox{\smallCalSep}{\genSmallCal{09}{2017}{September}}
+  \savebox{\smallCalOct}{\genSmallCal{10}{2017}{October}}
+  \savebox{\smallCalNov}{\genSmallCal{11}{2017}{November}}
+  \savebox{\smallCalDec}{\genSmallCal{12}{2017}{December}}
+  \renewcommand{\markRed}{if (equals=01-01) [red]}
+  \savebox{\smallCalJanN}{\genSmallCal{01}{2018}{January}}
   \restoreMarkRed
 
 %% Adapted from http://tex.stackexchange.com/a/10199/4771
@@ -151,8 +150,8 @@ pdflang={en}
       \pgfmathsetlength\pgf@xa{\tikz@lib@cal@xshift}%
       \pgftransformyshift{-\pgf@ya}
       \pgftransformyshift{-.45cm}
-      \foreach \d/\l in {0/ПОНЕДЕЛЬНИК MONDAY,1/ВТОРНИК TUESDAY,2/СРЕДА WEDNESDAY,3/ЧЕТВЕРГ THURSDAY,%
-                         4/ПЯТНИЦА FRIDAY,5/СУББОТА SATURDAY,6/ВОСКРЕСЕНЬЕ SUNDAY} {
+      \foreach \d/\l in {0/MONDAY,1/TUESDAY,2/WEDNESDAY,3/THURSDAY,%
+                         4/FRIDAY,5/SATURDAY,6/SUNDAY} {
         \pgf@xa=\d\pgf@xa%
         \pgftransformxshift{\pgf@xa-\cellwidth/2}%
         \pgftransformyshift{\pgf@ya}%
@@ -171,9 +170,9 @@ pdflang={en}
 
 %% Adapted from pgf source
 \def\pgfcalendarmonthname#1{%
-  \translate{\ifcase#1\or ЯНВАРЬ JANUARY\or ФЕВРАЛЬ FEBRUARY\or МАРТ MARCH\or АПРЕЛЬ APRIL\or
-    МАЙ MAY\or ИЮНЬ JUNE\or ИЮЛЬ JULY\or АВГУСТ AUGUST\or СЕНТЯБРЬ SEPTEMBER\or ОКТЯБРЬ OCTOBER\or
-    НОЯБРЬ NOVEMBER\or ДЕКАБРЬ DECEMBER\fi}%
+  \translate{\ifcase#1\or JANUARY\or FEBRUARY\or MARCH\or APRIL\or
+    MAY\or JUNE\or JULY\or AUGUST\or SEPTEMBER\or OCTOBER\or
+    NOVEMBER\or DECEMBER\fi}%
 }
 
 
