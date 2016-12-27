@@ -136,90 +136,13 @@
 
 %% All the days which shall be marked by any sings, notes etc
 \newcommand{\markDays}{
-  if (Monday,
-      equals=01-01,
-      equals=02-01,
-      equals=03-01,
-      equals=04-01,
-      equals=05-01,
-      equals=06-01,
-      equals=07-01,
-      equals=08-01,
-      equals=09-01,
-      equals=10-01,
-      equals=11-01,
-      equals=12-01) [week number]
-  \markRed
-  if (equals=01-01,
-      equals=02-23,
-      equals=03-08,
-      equals=05-01,
-      equals=06-12,
-      equals=11-04,
-      equals=06-22,
-      equals=07-19,
-      equals=08-16,
-      equals=10-05,
-      equals=09-01,
-      equals=10-25,
-      equals=10-19,
-      equals=06-06,
-      equals=12-12,
-      equals=05-24
-      ) [flag-flying day]
-  if (equals=07-12,
-      equals=01-07,
-      equals=04-12,
-      equals=04-05
-     ) [flag-rus-orthodox day]
   if (equals=10-04) [flag-space day]
   if (equals=07-26) [flag-navy day]
   if (equals=12-20) [flag-kgb day]
   if (equals=08-02) [flag-airborne day]
   if (equals=09-13) [flag-military day]
   if (equals=05-09) [flag-victory day]
-  if (equals=01-27,
-      equals=09-08,
-      equals=06-09,
-      equals=08-15,
-      equals=02-10,
-      equals=07-25,
-      equals=09-20,
-      equals=09-05,
-      equals=07-01,
-      equals=05-27) [flag-spb day]
-  if (equals=09-12) [flag-spb-orthodox day]
-  if (equals=01-06,
-      equals=01-08,
-      equals=01-14,
-      equals=01-18,
-      equals=01-19,
-      equals=02-22,
-      equals=02-15,
-      equals=02-14,
-      equals=03-07,
-      equals=03-14,
-      equals=03-21,
-      equals=03-01,
-      equals=05-21,
-      equals=05-30,
-      equals=05-31,
-      equals=07-07,
-      equals=08-14,
-      equals=08-19,
-      equals=08-28,
-      equals=08-29,
-      equals=10-14,
-      equals=04-21,
-      equals=06-01,
-      equals=09-27,
-      equals=09-11,
-      equals=09-21,
-      equals=11-07,
-      equals=12-04,
-      between=04-06 and 04-11 %% Страстная неделя
-  ) [flag-orthodox day]
-  if (equals=01-01) [observance=Новый год]
+  %if (equals=07-01) [flag-canada]
   if (equals=01-07) [observance=Рождество\\ Христово]
   if (equals=01-08) [observance=Собор\\ Пресвятой\\ Богородицы]
   if (equals=02-23) [observance=День защитника Отечества]
@@ -278,37 +201,6 @@
   %% International dates
   if (equals=05-18) [observance=Международный день музеев]
   if (equals=05-24) [observance=День\\ славянской письменности~и\\культуры]
-%% 2017: Чистый ПН и День Защитника Отечества совпадают. Не помещаются на одной клетке календаря
-%% if (equals=02-23) [observance=Чистый\\ понедельник]
-  if (equals=02-15) [observance=Сретение\\ Господне]
-  if (equals=02-16) [observance=Встреча\\ Масленицы]
-  if (equals=04-09) [observance=Великий\\ Четверток]
-  if (equals=04-10) [observance=Великий\\ Пяток]
-  if (equals=04-08) [observance=Великая\\ Среда]
-  if (equals=04-07) [observance=Великий\\ Вторник.\\ Благовещение]
-  if (equals=04-11) [observance=Великая\\ Суббота]
-  if (equals=04-06) [observance=Великий\\ Понедельник]
-  if (equals=04-21) [observance=Радоница]
-  if (equals=03-01) [observance=Торжество\\ Православия]
-  if (equals=05-21) [observance=Вознесение\\ Господне]
-  if (equals=05-30) [observance=Троицкая\\ родительская суббота]
-  if (equals=05-31) [observance=Троица]
-  if (equals=06-01) [observance=День Святого Духа]
-  if (equals=08-14) [observance=Медовый Спас]
-  if (equals=08-19) [observance=Преображение\\ Господне]
-  if (equals=08-28) [observance=Успение\\ Пресвятой\\ Богородицы]
-  if (equals=08-29) [observance=Третий Спас\\ (Спас на\\ полотне)]
-  if (equals=09-21) [observance=Рождество\\ Пр. Богородицы]
-  if (equals=09-27) [observance=Воздвижение Креста\\ Господня]
-  if (equals=10-14) [observance=Покров\\ Пресвятой\\ Богородицы]
-  if (equals=11-07) [observance=Димитриевская родительская суббота]
-  if (equals=07-07) [observance=Рождество Иоанна\\ Предтечи]
-  if (equals=12-04) [observance=Введение\\ во храм\\ Пр. Богородицы]
-%% Астрономические даты
-  if (equals=03-21) [observance=Вес. равноденствие]
-  if (equals=09-23) [observance=Осеннее\\ равноденствие]
-  if (equals=06-21) [observance=Летнее\\ солнцестояние]
-  if (equals=12-22) [observance=Зимнее\\ солнцестояние]
 %% Personal dates
   \birthday{10-17}{Максим}
   \birthday{12-04}{Дима Бигуняк}
@@ -323,5 +215,11 @@
   if (equals=09-07) [observance=\married\ \mycm Денис Полина]
   if (equals=08-05) [observance=\married\ Кирилл Настя\\ \married\ Тарас]
 %% Edmonton Specials
+  if (equals=01-01) [observance=New Year's Day]
+  if (equals=07-01) [observance=Canada Day]
   if (equals=10-31) [observance=By now\\ it has\\ snowed]
+  if (equals=12-24) [observance=Christmas Eve]
+  if (equals=12-25) [observance=Christmas]
+  if (equals=12-26) [observance=Boxing Day]
+  if (equals=12-31) [observance=New Year's Eve]
 }

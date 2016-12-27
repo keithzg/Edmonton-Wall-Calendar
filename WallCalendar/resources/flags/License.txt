@@ -7,3 +7,4 @@ SpaceFlag.png: automatically converted from Wikimedia image: http://commons.wiki
 RusDefence.png: automatically converted from Wikimedia image:  http://commons.wikimedia.org/wiki/File:Flag_of_the_Ministry_of_Defence_of_the_Russian_Federation.svg?uselang=en
 RusAirborne.png: automatically converted from Wikimedia image: http://commons.wikimedia.org/wiki/File:Flag_of_the_Russian_Airborne_Troops.svg?uselang=en
 9May.png: automatically converted from Wikimedia image: http://commons.wikimedia.org/wiki/File:Ribbon_of_Saint_George.svg?uselang=en
+Canada.png: converted from Wikimedia image: https://en.wikipedia.org/wiki/File:Flag_of_Canada.svg
