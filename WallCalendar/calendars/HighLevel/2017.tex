@@ -5,7 +5,7 @@
 \usepackage{titling}
 
 %% Title - will go to the PDF meta data
-\title{Wall calendar 2015}
+\title{Wall calendar 2017}
 
 %% Preamble - most of the Calendar declarations
 \input{preamble}
@@ -47,7 +47,7 @@
 }
 
 \vspace*{-.3cm}
-\centerline{\tiny\ccbysa\ \theauthor, 2014.}
+\centerline{\tiny\ccbysa\ \theauthor, 2017.}
 \restoregeometry
 
 %% 2 pages per every month: 1 with photo, another with calendar itself
@@ -63,7 +63,7 @@
 %% March
 \pict{3}
 \renewcommand{\TikzDayCode}{\node (lower right) at (0,0) [above left,font=\Huge] {\ifthenelse{\equal{\pgfcalendarcurrentday}{23}}{\small 23 (30)}{\ifthenelse{\equal{\pgfcalendarcurrentday}{24}}{\small 24 (31)}{\tikzdaytext}}};}
-\calmonthRaw{2015-03-01}{2015-03-29}
+\calmonthRaw{2017-03-01}{2017-03-30}
 \restoreTikzDayCode
 \smallmonths{3}{\smallCalFeb}{\smallCalApr}
 
@@ -86,7 +86,7 @@
 %% August
 \pict{8}
 \renewcommand{\TikzDayCode}{\node (lower right) at (0,0) [above left,font=\Huge] {\ifthenelse{\equal{\pgfcalendarcurrentday}{24}}{\small 24 (31)}{\tikzdaytext}};}
-\calmonthRaw{2015-08-01}{2015-08-30}
+\calmonthRaw{2017-08-01}{2017-08-30}
 \restoreTikzDayCode
 \smallmonths{8}{\smallCalJul}{\smallCalSep}
 
@@ -101,7 +101,7 @@
 %% November
 \pict{11}
 \renewcommand{\TikzDayCode}{\node (lower right) at (0,0) [above left,font=\Huge] {\ifthenelse{\equal{\pgfcalendarcurrentday}{23}}{\small 23 (30)}{\tikzdaytext}};}
-\calmonthRaw{2015-11-01}{2015-11-29}
+\calmonthRaw{2017-11-01}{2017-11-30}
 \restoreTikzDayCode
 \smallmonths{11}{\smallCalOct}{\smallCalDec}
 
@@ -111,13 +111,13 @@
 
 % Next year calendar - last page
 \vspace*{1cm}
-\centerline{\bfseries\Large 2016}
+\centerline{\bfseries\Large 2018}
 \vspace*{1.5cm}
 \centerline{\usebox{\yearCalFirst}}
 
 \newpage
 \vspace*{1cm}
-\centerline{\bfseries\Large 2016}
+\centerline{\bfseries\Large 2018}
 \vspace*{1.5cm}
 \centerline{\usebox{\yearCalSecond}}
 

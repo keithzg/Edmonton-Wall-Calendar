@@ -10,7 +10,7 @@ XMP_IMAGES=$(addprefix $(RESDIR)/photos2014/,$(addsuffix .xmp, $(basename $(notd
 
 EPS_IMAGES=$(addprefix $(RESDIR)/photos2014/,$(addsuffix .eps, $(basename $(notdir $(IMAGES)))))
 
-GOALS = 2015.pdf 2015-landscape.pdf cover.pdf
+GOALS = 2017.pdf 2017-landscape.pdf cover.pdf
 
 COPY = if test -r $*.toc; then cp $*.toc $*.toc.bak; fi
 RM = /bin/rm -f
@@ -24,14 +24,14 @@ license: $(XMP_IMAGES)
 	find ./photos -name "*.png" -exec exiv2 -S .xmp in {} \;
 
 web:
-	mkdir -p web/cal2015/site/target
-	txt2site -g web/cal2015/cal2015.conf
+	mkdir -p web/cal2017/site/target
+	txt2site -g web/cal2017/cal2017.conf
 
-DEPS = 	2015.tex customization.tex $(ADDDEPS)
+DEPS = 	2017.tex customization.tex $(ADDDEPS)
 
-2015-landscape.pdf: 2015.pdf 2015-landscape.tex
+2017-landscape.pdf: 2017.pdf 2017-landscape.tex
 
-2015.pdf: $(DEPS) $(IMAGES) #$(EPS_IMAGES)
+2017.pdf: $(DEPS) $(IMAGES) #$(EPS_IMAGES)
 
 back.pdf: $(ADDDEPS) $(IMAGES) back.tex
 front.pdf: $(ADDDEPS) $(IMAGES) front.tex
@@ -75,7 +75,7 @@ cover.pdf: back.pdf front.pdf cover.tex $(IMAGES)
 clean:
 		latexmk -c
 		$(RM) -f *.bbl
-		$(RM) -f $(EPS_IMAGES) $(XMP_IMAGES) 2015-pics.pdf back-pics.pdf
+		$(RM) -f $(EPS_IMAGES) $(XMP_IMAGES) 2017-pics.pdf back-pics.pdf
 #		aux *.log *.bbl *.blg *.brf *.cb *.ind *.idx *.ilg  \
 #		*.inx *.ps *.dvi *.pdf *.toc *.out *.lot *.lof *.eps *.fls *.fdb_latexmk
 
