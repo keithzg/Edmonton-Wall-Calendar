@@ -54,59 +54,50 @@
 
 %% January
 \pictCal{1}
-\smallmonths{1}{\smallCalDecO}{\smallCalFeb}
+\newpage
 
 %% February
 \pictCal{2}
-\smallmonths{2}{\smallCalJan}{\smallCalMar}
+\newpage
 
 %% March
-\pict{3}
-\renewcommand{\TikzDayCode}{\node (lower right) at (0,0) [above left,font=\Huge] {\ifthenelse{\equal{\pgfcalendarcurrentday}{23}}{\small 23 (30)}{\ifthenelse{\equal{\pgfcalendarcurrentday}{24}}{\small 24 (31)}{\tikzdaytext}}};}
-\calmonthRaw{2017-03-01}{2017-03-30}
-\restoreTikzDayCode
-\smallmonths{3}{\smallCalFeb}{\smallCalApr}
+\pictCal{3}
+\newpage
 
 %% April
 \pictCal{4}
-\smallmonths{4}{\smallCalMar}{\smallCalMay}
+\newpage
 
 %%May
 \pictCal{5}
-\smallmonths{5}{\smallCalApr}{\smallCalJun}
+\newpage
 
 %% June
 \pictCal{6}
-\smallmonths{6}{\smallCalMay}{\smallCalJul}
+\newpage
 
 %% July
 \pictCal{7}
-\smallmonths{7}{\smallCalJun}{\smallCalAug}
+\newpage
 
 %% August
 \pict{8}
-\renewcommand{\TikzDayCode}{\node (lower right) at (0,0) [above left,font=\Huge] {\ifthenelse{\equal{\pgfcalendarcurrentday}{24}}{\small 24 (31)}{\tikzdaytext}};}
-\calmonthRaw{2017-08-01}{2017-08-30}
-\restoreTikzDayCode
-\smallmonths{8}{\smallCalJul}{\smallCalSep}
+\newpage
 
 %% September
 \pictCal{9}
-\smallmonths{9}{\smallCalAug}{\smallCalOct}
+\newpage
 
 %% October
 \pictCal{10}
-\smallmonths{10}{\smallCalSep}{\smallCalNov}
+\newpage
 
 %% November
-\pict{11}
-\renewcommand{\TikzDayCode}{\node (lower right) at (0,0) [above left,font=\Huge] {\ifthenelse{\equal{\pgfcalendarcurrentday}{23}}{\small 23 (30)}{\tikzdaytext}};}
-\calmonthRaw{2017-11-01}{2017-11-30}
-\restoreTikzDayCode
-\smallmonths{11}{\smallCalOct}{\smallCalDec}
+\pictCal{11}
+\newpage
 
 %% December
 \pictCal{12}
-\smallmonths{12}{\smallCalNov}{\smallCalJanN}
+\newpage
 
 \end{document}
