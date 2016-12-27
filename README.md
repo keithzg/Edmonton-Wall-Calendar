@@ -13,7 +13,4 @@ Still, it's best to keep licenses and legalities clear, and there may well be ro
 I'm re-using the [WallCalendar](https://github.com/vitalyrepin/WallCalendar) project, which seems like it'll work decently, and there's also something appropriate at re-using a Russian project for an Edmontonian project, no?
 
 ## Dependencies
- latexmk texlive-latex-recommended texlive-latex-extra texlive-luatex texlive-fonts-extra
-
-Dependencies I should remove:
- texlive-lang-cyrillic
+ latexmk texlive-latex-recommended texlive-latex-extra texlive-luatex texlive-fonts-extra texlive-lang-cyrillic
