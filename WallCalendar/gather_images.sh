@@ -6,7 +6,7 @@ t="tmp"
 mkdir -p ${t}
 
 # From https://twitter.com/yegtraffic/status/289108067793113088
-curl https://pbs.twimg.com/media/BAMeGoGCAAAFsDm.jpg:large -o ${t}/jan.png
+curl https://pbs.twimg.com/media/BAMeGoGCAAAFsDm.jpg:large -o ${t}/jan.jpg
 # From https://twitter.com/yegtraffic/status/289108067793113088
 curl https://pbs.twimg.com/media/BAMeGoGCAAAFsDm.jpg:large -o ${t}/feb.png
 # http://globalnews.ca/news/2579971/semi-wedged-underneath-overpass-near-alberta-legislature/
@@ -33,6 +33,11 @@ curl https://pbs.twimg.com/media/BAMeGoGCAAAFsDm.jpg:large -o ${t}/dec.png
 curl https://pbs.twimg.com/media/BAMeGoGCAAAFsDm.jpg:large -o ${t}/front.png
 # From https://twitter.com/yegtraffic/status/289108067793113088
 curl https://pbs.twimg.com/media/BAMeGoGCAAAFsDm.jpg:large -o ${t}/back.png
+
+# Do some conversions; attempting http://www.imagemagick.org/Usage/thumbnails/#square
+convert ${t}/jan.jpg -virtual-pixel white -set option:distort:viewport \
+     "%[fx:max(w,h)]x%[fx:max(w,h)]-%[fx:max((h-w)/2,0)]-%[fx:max((w-h)/2,0)]" \
+     -filter point -distort SRT 0  +repage ${t}/jan.png
 
 # Before we do this, we *should* probably be converting/resizing/etc these images, but . . .
 cp ${t}/*.png ${r}/
